@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f2f5;
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#Container{
+    display: flex;
+}
+
+#Logins{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left : 20vw;
+    top: 13vh;
+    margin-right: 30vw;
+}
+
+#Facebook{
+    height: 70px;
+    width: 200px;
+    margin: -21px;
+}
+
+#Logins > #Recent-logins{
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#Logins > #Subs{
+    color: #606770;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 400;    
+}
+
+#Accounts{
+    display: flex;
+}
+
+#Account1, #Account2{
+    position: relative;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+#Account1:hover, #Account2:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+#account1-img, #add-acc-img{
+    height: 160px;
+    width: 160px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#add-account{
+    color: #166fe5;
+}
+
+.username{
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px;
+    text-align: center;
+    color: rgb(75, 79, 86);
+}
+
+#cancel{
+    position: absolute;
+    left: 4px;
+    border-radius: 50%;
+    top: 5px;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-color: rgb(32, 33, 35);
+    opacity: 0.5;
+    font: 400;
+    line-height: 0.43cm;
+    color: white;
+}
+
+#notification{
+    position: absolute;
+    right: -5px;
+    color: white;
+    font-size: 15px;
+    border-radius: 50%;
+    top: -5px;
+    height: 25px;
+    text-align: center;
+    line-height: 0.65cm;
+    width: 25px;
+    background-color: red;
+}
+
+#Account1:hover  #cancel{
+    background-color: white;
+    opacity: 1.0;
+    color: rgb(194, 193, 193);
+    width: 23px;
+    height: 23px;
+    left: -5px;
+    top: -5px;
+    line-height: 0.55cm;
+    color: rgb(75, 78, 84);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#Credentials{
+    position: relative;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    top: 18vh;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+    justify-content: center;
+    box-shadow: 0 5px 3px 3px gainsboro;
+}
+
+#Credentials > a{
+    margin: 18px 0;
+    text-decoration: none;
+    color: #1877f2;
+}
+
+#credentials > a:hover{
+    text-decoration: underline;
+    cursor: pointer;   
+}
+
+hr{
+    width: 95%;
+    height: 0.1%;
+    background-color: rgb(194, 193, 193);
+    border: none;
+}
+
+#credentials > input[type = email], #credentials > input[type= password]{
+    height: 15%;
+    margin: 4px 0 8px 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 95%;
+    border: 1.5px solid #eeeff0;
+}
+
+#credentials > input[type = password]{
+    margin-bottom: 12px;
+}
+
+#credentials > input[type = email]:focus, #credentials > input[type = password]:focus{
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 0 5px #719ece;
+    caret-color: blue;
+}
+
+#log-in-button{
+    border-radius: 5px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 20px;
+    border: none;
+    height: 60px;
+    font-weight: bold;
+    width: 95%;
+}
+
+#log-in-button:hover{
+    background-color: #166fe5;
+    cursor: pointer;
+}
+
+#new-account-button{
+    border-radius: 5px;
+    background-color: #42b74a;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    height: 48px;
+    width: 55%;
+    border: none;
+    margin-top: 20px;
+}
+
+#new-account-button:hover{
+    cursor: pointer;
+    background-color: #36a420;
+}
+
+p{
+    font-size: 15px;
+    position: absolute;
+    bottom: -55px;
+}
+
+footer{
+    background-color: white;
+    position: absolute;
+    bottom: -180px;
+    width: 100vw;
+    padding: 45px;
+    color: #a6a8aa;
+    font-size: 12px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    word-spacing: 12px;
+    list-style: 20px;
+}
+
+#morelanguages:hover{
+    cursor: pointer;
+    box-shadow: #606770;
+}
+#morelanguages{
+    border-radius: 0;
+    border: 1px solid black;
+    height: 20px;
+    width: 25px;
+}
+
+@media screen and (max-width:1114px){
+    #Logins{
+        left: 70px;
+        margin-right: 22vw;
+    }
+    #Credentials{
+        right: 30px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    body{
+        height: 150vh;
+    }
+    #container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #logins{
+        margin-right: 0;
+        align-items: center;
+        left: 0;
+        top: 20px;
+    }
+    #account1{
+        margin-right: 5px;
+    }
+    #account2{
+        margin-left: 5px;
+        margin-right: 0;
+    }
+    #credentials{
+        text-align: center;
+        left: 0;
+        margin-right: 5px;
+        margin-top: 5px;
+        top: 80px;
+    }
+    #logins, #credentials{
+        position: relative;
+    }
+    footer{
+        position: absolute;
+        padding: 20px;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-height:670px) {
+    footer{
+        position: relative;
+        top: 100px;
+    }
+}
